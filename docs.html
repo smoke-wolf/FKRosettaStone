@@ -1,4 +1,220 @@
-function createSnowflake() {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  /* General styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f3d; /* Dark blue background */
+  color: #fff; /* White text for better contrast */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #001f4d; /* Deep blue header */
+  text-align: center;
+  padding: 20px 0;
+}
+
+header img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+main {
+  padding: 20px 0;
+}
+
+section {
+  margin-bottom: 30px;
+  background-color: #001f4d; /* Deep blue sections */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Slight white shadow */
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff; /* White heading text */
+}
+
+section p {
+  color: #ccc; /* Light gray paragraph text */
+}
+
+section img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #001f4d; /* Deep blue footer */
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Components for automatic sizing of divs */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+footer {
+  width: 100%;
+}
+
+/* Custom styles for different sections */
+.features ul,
+.benefits ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features ul li::before,
+.benefits ul li::before {
+  content: "• ";
+  color: #007bff; /* Adjust as needed */
+  font-weight: bold;
+  margin-right: 5px;
+}
+/* Snowflake styles */
+.snowflake {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform-origin: 0 0;
+  opacity: 0; /* Initially set opacity to 0 */
+}
+
+.branch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 2px; /* Adjust the radius to make it look like branches */
+  transform-origin: 0 0;
+  opacity: 1; /* Branches are initially visible */
+}
+
+
+.github-btn:hover {
+  background-color: #1f6feb;
+}
+.github-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #24292e;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .github-btn:hover {
+      background-color: #1f6feb;
+    }
+
+    /* Particle animation styles */
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background-color: #f0f0f0;
+      border-radius: 50%;
+      pointer-events: none;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rosetta Stone Writing Automator Downloader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Rosetta Stone Writing Automator Downloader</h1>
+        <a href="https://github.com/smoke-wolf/FKRosettaStone/tree/main" class="github-btn" id="github-btn">Visit GitHub</a>
+      <img src="https://i.ibb.co/LRvkzb0/ezgif-4-17bdb1dbc5.gif" alt="Demo Gif">
+      
+    </div>
+  </header>
+  
+  <main>
+    <div class="container">
+      <section class="description">
+        <h2>Purpose</h2>
+        <p>Just in case it disappears from the internet, this is an intermediary to download the auto-typer for Rosetta Stone's writing exercises. It's like an insurance policy against Rosetta Stone's complications.</p>
+      </section>
+      
+      <section class="description">
+        <h2>Usage</h2>
+        <p>Python and necessary libraries (requests, termcolor, keyboard, pyautogui) are required. Run the script, follow the cues, and obtain the Writing Automator for your convenience.</p>
+      </section>
+      
+      <section class="features">
+        <h2>Features</h2>
+        <img src="https://i.ibb.co/k156mjm/Screen-Shot-2024-01-05-at-11-22-19-PM.png" alt="Features Image">
+        <ul>
+          <li>User Authentication for safety</li>
+          <li>Automated Download of the script</li>
+        </ul>
+      </section>
+      
+      <section class="benefits">
+        <h2>Benefits of the Rosetta Stone Writing Automator</h2>
+        <img src="https://i.ibb.co/wNJ2KD9/Screen-Shot-2024-01-05-at-11-27-41-PM.png" alt="Benefits Image">
+        <ul>
+          <li>Enhanced Efficiency</li>
+          <li>Streamlined Workflow</li>
+          <li>Accuracy and Assistance for special characters and languages like French</li>
+        </ul>
+      </section>
+      
+      <section class="disclaimer">
+        <h2>Disclaimer</h2>
+        <p>Remember, whatever happens after downloading, it's your responsibility. Keep it legal and cool.</p>
+      </section>
+      
+      <section class="how-it-works">
+        <h2>How It Works</h2>
+        <p>Enter '1' to log in and download the Writing Automator. '0' exits the process and cleans up.</p>
+      </section>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Rosetta Stone Writing Automator Downloader. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+  function createSnowflake() {
   const snowflake = document.createElement('div');
   snowflake.classList.add('snowflake');
   const depth = Math.floor(Math.random() * 50) + 1; // Random number of layers (up to 3)
@@ -80,3 +296,7 @@ function getRandomColor() {
   }
   return color;
 }
+ac
+  </script>
+</body>
+</html>
