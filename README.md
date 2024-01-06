@@ -29,10 +29,12 @@ It will request a username and password, if you don't already have a GHPM accoun
 #### Usage
 
 Basic drill. Python's gotta be chillin' on your system, and make sure those libraries (requests, termcolor, keyboard, pyautogui) are lounging around too. Fire up the script in a Python-friendly space, follow the cues, and grab that Writing Automator for your lazy endeavors.
+
 ![enter image description here](https://i.ibb.co/N6HVCCJ/Screen-Recording-2024-01-06-at-3-26-40-AM-1.gif)
 #### Features
 
 What's this bad boy packin'?
+
 ![enter image description here](https://i.ibb.co/k156mjm/Screen-Shot-2024-01-05-at-11-22-19-PM.png)
 -   **User Authentication:** Keeps it safe while you snatch that Writing Automator.
 -   **Automated Download:** Snags the script, so you can breeze through those writing tasks on Rosetta Stone.
