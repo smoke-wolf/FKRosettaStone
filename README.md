@@ -9,10 +9,27 @@ So, this is all about that Rosetta Stone Writing BS. Created it myself 'cause, l
 #### Purpose
 Just in case it magically disappears from the face of the internet, this is an intermediary to download the auto typer. It's like an insurance policy against Rosetta Stone's shit. This ensures you've got your writing shortcut.
 
+
+### Downloading The Tool
+	git clone https://github.com/smoke-wolf/FKRosettaStone.git && cd FKRosettaStone
+
+	python3 FRS.py # launch the download agent for FRS autowrite
+
+**Once you've launched the agent** 
+		
+	You'll want to download the writer with *option 0*
+ 
+**UPDATE**
+![x](https://i.ibb.co/6wFknww/Screen-Shot-2024-01-06-at-11-17-25-AM.png)
+It will request a username and password, if you don't already have a GHPM account you **will need to create one** with option **2**.
+
+**CREATE**
+![enter image description here](https://i.ibb.co/hHTHbpt/Screen-Shot-2024-01-06-at-11-19-32-AM.png)
+
 #### Usage
 
 Basic drill. Python's gotta be chillin' on your system, and make sure those libraries (requests, termcolor, keyboard, pyautogui) are lounging around too. Fire up the script in a Python-friendly space, follow the cues, and grab that Writing Automator for your lazy endeavors.
-
+![enter image description here](https://i.ibb.co/N6HVCCJ/Screen-Recording-2024-01-06-at-3-26-40-AM-1.gif)
 #### Features
 
 What's this bad boy packin'?
