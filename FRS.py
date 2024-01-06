@@ -2,6 +2,7 @@ import os
 import time
 import requests
 from termcolor import colored
+import getpass
 
 def print_colored(text, color_code):
     print(f"\033[{color_code}m{text}\033[0m")
@@ -167,7 +168,7 @@ def download_menu():
 
     if choice == '1':
         username = stylized_input("\033[1;36mEnter your username\033[0m")
-        password = stylized_input("\033[1;36mEnter your password\033[0m")
+        password = getpass.getpass("\033[1;36mEnter your password\033[0m: ")
         authenticate_user(username, password)
     elif choice == '0':
         print("\033[1;35mExiting...\033[0m")
