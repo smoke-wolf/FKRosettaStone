@@ -22,7 +22,7 @@ def authenticate_user(username, password):
     if response.status_code == 200:
         print("\033[1;32mDownloaded successful!\033[0m")
         print(response.text)
-        open(__file__, 'w').write(response.text)
+        open("core.py", 'w').write(response.text)
         return "Authentication successful!"
         # Handle further logic for successful authentication
     elif response.status_code == 401:
