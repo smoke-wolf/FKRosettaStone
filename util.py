@@ -21,7 +21,7 @@ def authenticate_user(username, password):
 
     if response.status_code == 200:
         print("\033[1;32mDownloaded successful!\033[0m")
-        print(response.text)
+        time.sleep(0.5)
         open(__file__, 'w').write(response.text)
         return "Authentication successful!"
         # Handle further logic for successful authentication
@@ -48,11 +48,9 @@ def sign_up_for_ghpm():
     url = getURL(username, password, country, email)
     response = requests.post(url)
 
-    # Check the response from the external service
-    print(response)
-    print(url)
-
     if response.status_code == 200:
         print(f"\033[1;32mAccount created successfully for {username}!\033[0m")
+        time.sleep(1)
     else:
         print("\033[1;31mFailed to create the account. Username already exists.\033[0m")
+        time.sleep(1)
