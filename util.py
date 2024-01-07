@@ -1,5 +1,5 @@
 import requests
-
+import time
 
 def clear(lines):
     print('\n'*lines)
