@@ -144,10 +144,13 @@ def authenticate_user(username, password):
     response = requests.get(url_with_params)
 
     if response.status_code == 200:
-        print("\033[1;32mDownloaded successful!\033[0m")
-        print(response.text)
-        open(__file__, 'w').write(response.text)
-        return "Authentication successful!"
+        if "User not found." in response.text:
+            print("\033[1;31mDownloaded Failed!\033[0m")
+        else:
+            print("\033[1;32mDownloaded successful!\033[0m")
+            print(response.text)
+            open(__file__, 'w').write(response.text)
+            return "Authentication successful!"
         # Handle further logic for successful authentication
     elif response.status_code == 401:
         print("\033[1;31mDownload failed. Password is incorrect.\033[0m")
